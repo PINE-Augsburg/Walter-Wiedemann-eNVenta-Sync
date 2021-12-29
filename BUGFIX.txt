@@ -1,0 +1,2 @@
+- Haken bei Lizenzkunde wird nun richtig gesetzt
+- Lizenzpositionen werden gemäß Ausschlussliste des Kunden behandelt
