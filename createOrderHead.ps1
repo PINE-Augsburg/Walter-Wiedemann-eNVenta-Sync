@@ -4,8 +4,9 @@
 #
 #
 ###############################################################
-$SQL_Server = 'WWSV05'
-$SQL_DB = 'Wiedemann'
+$SQL_Server = <SQL_SERVERNAME>
+$SQL_DB = <SQL_DB_NAME>
+
 function createOrderHead($i, $newOrderNumber, $createdAt, $modifiedAt, $KW, $VertreterNr, $licensingByCustomer) 
 {
     $OrderHeadObj = New-Object PSObject
