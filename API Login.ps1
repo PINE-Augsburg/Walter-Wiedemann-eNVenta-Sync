@@ -16,8 +16,8 @@
 . O:\Entwicklung\eNVenta_REST\getClerk.ps1
 . O:\Entwicklung\eNVenta_REST\isLicenseCustomer.ps1
 
-$SQL_Server = 'WWSV05'
-$SQL_DB = 'Wiedemann'
+$SQL_Server = <SQLSERVER_NAME>
+$SQL_DB = <SQLSERVER_DB>
 
 function updateOrder($countedPositions, $orderId, $OrderNr) {
     $URL_Update_Order = "https://api.production.app-project2028.wiedemann-augsburg.de/api/v1/acquisition-sales-orders/$orderId/erp-processed"
@@ -64,8 +64,8 @@ $URLNewOrders = 'https://api.production.app-project2028.wiedemann-augsburg.de/ap
 
 #Benutzer Credentials
 $header = @{
-    username='admin'
-    password='Oow.eighash.ah7dieM0'
+    username= <REST_API_USERNAME>
+    password= <REST_API_PASSWORD>
 }
 
 
